@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8BF18F09-D85C-4366-AA92-2EC977333AB8}</ProjectGuid>
+    <RootNamespace>comp479_final</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir);$(SolutionDir)..\..\thirdParty\chilkat-9.3.2\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(SolutionDir)..\..\thirdParty\chilkat-9.3.2\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>CURL_STATICLIB;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ChilkatDbg.lib;crypt32.lib;ws2_32.lib;dnsapi.lib;wldap32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="cluster\centroid.cpp" />
+    <ClCompile Include="cluster\clusterer.cpp" />
+    <ClCompile Include="cluster\document.cpp" />
+    <ClCompile Include="cluster\metrics.cpp" />
+    <ClCompile Include="crawler\crawler.cpp" />
+    <ClCompile Include="indexer\docidMapper.cpp" />
+    <ClCompile Include="indexer\entry.cpp" />
+    <ClCompile Include="indexer\logger.cpp" />
+    <ClCompile Include="indexer\memoryManager.cpp" />
+    <ClCompile Include="indexer\metadataHelper.cpp" />
+    <ClCompile Include="indexer\preprocessor.cpp" />
+    <ClCompile Include="indexer\queryManager.cpp" />
+    <ClCompile Include="indexer\oldrankManager.cpp" />
+    <ClCompile Include="indexer\rankManager.cpp" />
+    <ClCompile Include="indexer\spimiReader.cpp" />
+    <ClCompile Include="indexer\tokenizer.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cluster\centroid.h" />
+    <ClInclude Include="cluster\clusterer.h" />
+    <ClInclude Include="cluster\document.h" />
+    <ClInclude Include="cluster\metrics.h" />
+    <ClInclude Include="crawler\crawler.h" />
+    <ClInclude Include="indexer\docidMapper.h" />
+    <ClInclude Include="indexer\entry.h" />
+    <ClInclude Include="indexer\logger.h" />
+    <ClInclude Include="indexer\memoryManager.h" />
+    <ClInclude Include="indexer\metadataHelper.h" />
+    <ClInclude Include="indexer\preprocessor.h" />
+    <ClInclude Include="indexer\queryManager.h" />
+    <ClInclude Include="indexer\oldrankManager.h" />
+    <ClInclude Include="indexer\rankManager.h" />
+    <ClInclude Include="indexer\spimiReader.h" />
+    <ClInclude Include="indexer\tokenizer.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

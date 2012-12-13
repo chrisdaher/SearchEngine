@@ -1,0 +1,172 @@
+<html>
+	<head>
+		<title>Chilkat Class Libraries for Visual Studio 2012</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+p, td, li {
+font-family: verdana;
+font-size: 10pt;
+}
+h1 {
+font-family: verdana;
+font-size: 16pt;
+}
+h2 {
+font-family: verdana;
+font-size: 12pt;
+}
+.style1 {font-family: "Courier New", Courier, monospace}
+</style>
+	</head>
+	<body bgcolor="#ffffff">
+		
+<h1><img src="images3/dudeCPP.GIF" width="100" height="100"> <i>Chilkat Class Libraries for Visual Studio 2012 (VC++ 11.0)</i> </h1>
+<h2>* Also includes functions for the C Programming Language using VC++ 11.0</h2>
+<p><a href="http://www.chilkatsoft.com/refdoc/">Chilkat 
+  C++ Library Documentation</a></p>
+   <h2>IMPORTANT: Many C++ programmers mistakenly think there are memory leaks.<br>
+ <a href="http://blog.chilkatsoft.com/?p=109">Please read this blog post about memory leaks</a> to understand the issue.</h2>
+
+		<p>The Chilkat Visual C++ Library contains many individual products:</font></p>
+		
+<table width="100%" cellspacing="0" cellpadding="3" border="1">
+  <tr> 
+    <td><b>PRODUCT</b></td>
+    <td><b>CLASSES</b></td>
+  </tr>
+  <tr> 
+    <td>Chilkat Zip </td>
+    <td>CkZip, CkZipEntry, CkZipProgress, CkGzip, CkGzipProgress, CkUnixCompress</td>
+  </tr>
+  <tr> 
+    <td>Chilkat Email</td>
+    <td>CkMailMan, CkEmail, CkEmailBundle, CkMailProgress </td>
+  </tr>
+  <tr>
+    <td>Chilkat FTP2 </td>
+    <td>CkFtp2, CkFtpProgress </td>
+  </tr>
+  <tr>
+    <td>Chilkat SSH/SFTP </td>
+    <td>CkSsh, CkSFtp, CkSshKey, CkSshTunnel, CkSFtpDir, CKSFtpFile, CkSFtpProgress </td>
+  </tr>
+  <tr>
+    <td>Chilkat Crypt</td>
+    <td>CkCrypt2, CkOmaDrm</td>
+  </tr>
+  <tr>
+    <td>Chilkat HTTP </td>
+    <td>CkHttp, CkHttpRequest, CkHttpResponse, CkHttpProgress </td>
+  </tr>
+  <tr>
+    <td>Chilkat HTML-to-XML </td>
+    <td>CkHtmlToXml</td>
+  </tr>
+  <tr> 
+    <td>Chilkat Charset</td>
+    <td>CkCharset</td>
+  </tr>
+  
+  <tr> 
+    <td>Chilkat MIME </td>
+    <td>CkMime</td>
+  </tr>
+  <tr> 
+    <td>Chilkat MHT</td>
+    <td>CkMht, CkMhtProgress</td>
+  </tr>
+  <tr>
+    <td>Chilkat IMAP </td>
+    <td>CkImap, CkMessageSet, CkMailboxes, CkImapProgress</td>
+  </tr>
+  <tr> 
+    <td>Chilkat RSA </td>
+    <td>CkRsa</td>
+  </tr>
+  <tr> 
+    <td>Chilkat Socket </td>
+    <td>CkSocket</td>
+  </tr>
+  <tr> 
+    <td>Chilkat Tar </td>
+    <td>CkTar</td>
+  </tr>
+  <tr> 
+    <td>Chilkat Bounce </td>
+    <td>CkBounce</td>
+  </tr>
+  <tr>
+    <td>Chilkat Spider (Free) </td>
+    <td>CkSpider</td>
+  </tr>
+  <tr> 
+    <td>Chilkat XML (Free) </td>
+    <td>CkXml</td>
+  </tr>
+  <tr> 
+    <td>Chilkat XMP </td>
+    <td>CkXmp</td>
+  </tr>
+  <tr> 
+    <td>Chilkat Upload (Free) </td>
+    <td>CkUpload, CkCGI</td>
+  </tr>
+  <tr> 
+    <td>Free 
+    Supporting Classes </font>    </td>
+    <td>CkString, 
+      CkByteData, CkStringArray, CkCert, CkCertStore, CkCreateCS, CkCSP, CkCertChain, CkCertCollection, CkKeyContainer, CkPfx, CkPrivateKey, CkPublicKey </td>
+  </tr>
+</table>
+		<h2>Chilkat Libs</h2>
+		
+<p>The Chilkat class library distribution contains .lib files for each possible C++ runtime library  :</font></p>
+		<table width="500" cellspacing="0" cellpadding="3" border="1">
+			<tr>
+				<td width="248"><b>C++ Runtime Library </b></td>
+				<td width="234"><b>Chilkat Lib</b></td>
+			</tr>
+			<tr>
+				<td>Multi-threaded Debug DLL (/MDd) </td>
+				<td>ChilkatDbgDll.lib</td>
+			</tr>
+			<tr>
+				<td>Multi-threaded Debug (/MTd) </td>
+				<td>ChilkatDbg.lib				</td>
+			</tr>
+			<tr>
+				<td>Multi-threaded DLL (/MD) </td>
+				<td>ChilkatRelDll.lib</td>
+			</tr>
+			<tr>
+				<td>Multi-threaded (/MT) </td>
+				<td>ChilkatRel.lib				</td>
+			</tr>
+		</table>
+		<p>In addition, you may find that 
+				you need to include the following system libraries depending on what 
+				functionality is used:</font></p>
+		<p><b>rpcrt4.lib, dnsapi.lib, 
+					crypt32.lib, ws2_32.lib, advapi32.lib oleaut32.lib ole32.lib</b><b></font></b></p>
+		<h2>Header Files</h2>
+		<p>Header files can be found in the 
+				"include" subdirectory, relative to the directory where the distribution was 
+				unzipped. The published Chilkat VC++ classes are designed to hide all 
+				implementation details to minimize dependencies. </font>
+		</p>
+		<h2>Example Programs		</h2>
+		
+<p>Example programs can be 
+  found online at <a href="http://www.example-code.com/">http://www.example-code.com/</a>.</font></p>
+<h2>Demo Version vs. Full Version</h2>
+<p>Chilkat does not distribute demo versions of its software. This package is the full version. The full versions of all Chilkat products are publicly available at <a href="http://www.chilkatsoft.com/downloads.asp">http://www.chilkatsoft.com/downloads.asp</a></p>
+<p>Each product within the Chilkat class library can be tested for 30 days by calling the UnlockComponent method and passing an arbitrary string to it. For example:</p>
+<blockquote>
+  <p class="style1">CkZip zip;<br>
+  zip.UnlockComponent(&quot;anything works for 30-day trial&quot;);</p>
+  </blockquote>
+<p>There are no limitations when testing for 30 days. Upon purchase, you will receive a permanent unlock code that is valid for all future versions of the Chilkat library. </p>
+<p>&nbsp;</p>
+		<p>&nbsp;</p>
+	</body>
+</html>

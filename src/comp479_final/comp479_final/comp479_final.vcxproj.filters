@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\crawler">
+      <UniqueIdentifier>{a58a794b-cc43-4c25-b85f-6d8d9ac8cf01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\indexer">
+      <UniqueIdentifier>{e56251ba-eebb-4192-b8c6-4ae311476e00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cluster">
+      <UniqueIdentifier>{961354b2-917d-4f99-a1ef-c66735fa79be}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crawler\crawler.cpp">
+      <Filter>Source Files\crawler</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\docidMapper.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\entry.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\logger.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\memoryManager.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\metadataHelper.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\preprocessor.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\queryManager.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\spimiReader.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\tokenizer.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\oldrankManager.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="indexer\rankManager.cpp">
+      <Filter>Source Files\indexer</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\document.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\clusterer.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\centroid.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+    <ClCompile Include="cluster\metrics.cpp">
+      <Filter>Source Files\cluster</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="crawler\crawler.h">
+      <Filter>Source Files\crawler</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\docidMapper.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\entry.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\logger.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\memoryManager.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\metadataHelper.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\preprocessor.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\queryManager.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\spimiReader.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\tokenizer.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\oldrankManager.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="indexer\rankManager.h">
+      <Filter>Source Files\indexer</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\document.h">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\clusterer.h">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\centroid.h">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+    <ClInclude Include="cluster\metrics.h">
+      <Filter>Source Files\cluster</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
